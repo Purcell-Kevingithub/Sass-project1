@@ -26,6 +26,7 @@ h3 {
   position: relative;
   left: -4.3%;  
   margin-top: 6%;
+  margin-bottom: 0px !important;
 }
 
 /* Chrome, Safari, Opera */
@@ -49,7 +50,7 @@ circle {
 }
 
 .food-graph{
-  margin-top: 30%;
+  margin-top: 10%;
 }
 
 .div1, .div2{
@@ -103,7 +104,7 @@ span {
 }
 
 rect {
-  width: 24px;
+  width: 4em;
   float: left;
   padding-left: 25px;
   padding-top: 7px;
@@ -126,4 +127,16 @@ rect {
     top: -15px;
     left: 0px;
   }
+}
+
+.lightgreen-bg {
+background-color: #e9f5dc;
+}
+
+.beige-bg{
+  background-color: beige;
+}
+
+.header-height{
+  height: 160px;
 }
