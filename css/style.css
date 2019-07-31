@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @-webkit-keyframes slide-left {
   from {
-    left: 25%;
+    left: 0%;
   }
   to {
     left: 50%;
@@ -27,7 +27,7 @@ body {
 
 .slide-left {
   position: relative;
-  left: 50%;
+  left: 48%;
 }
 
 h3 {
@@ -39,7 +39,6 @@ h3 {
   letter-spacing: 0.183em;
   line-height: 1.4;
   position: relative;
-  left: -4.3%;
   margin-top: 6%;
   margin-bottom: 0px !important;
 }
@@ -52,7 +51,8 @@ circle {
 .element {
   position: absolute;
   top: 20;
-  left: 47%;
+  left: 50%;
+  margin-left: -75px;
   animation-name: appear;
   animation-duration: 1s;
 }
@@ -66,12 +66,8 @@ circle {
   margin-top: 10%;
 }
 
-.div1, .div2 {
-  background-color: #F1F2F3;
-}
-
 rect:nth-child(2) {
-  height: 632.6666666667px;
+  height: 379.6px;
   background-color: rgba(167, 240, 213, 0.55);
 }
 rect:nth-child(2):before {
@@ -82,7 +78,7 @@ rect:nth-child(2):after {
 }
 
 rect:nth-child(3) {
-  height: 339px;
+  height: 203.4px;
   background-color: rgba(0, 159, 255, 0.5);
 }
 rect:nth-child(3):before {
@@ -93,7 +89,7 @@ rect:nth-child(3):after {
 }
 
 rect:nth-child(4) {
-  height: 246px;
+  height: 147.6px;
   background-color: rgba(10, 165, 153, 0.45);
 }
 rect:nth-child(4):before {
@@ -104,7 +100,7 @@ rect:nth-child(4):after {
 }
 
 rect:nth-child(5) {
-  height: 237px;
+  height: 142.2px;
   background-color: rgba(167, 240, 213, 0.4);
 }
 rect:nth-child(5):before {
@@ -115,7 +111,7 @@ rect:nth-child(5):after {
 }
 
 rect:nth-child(6) {
-  height: 211.6666666667px;
+  height: 127px;
   background-color: rgba(0, 159, 255, 0.35);
 }
 rect:nth-child(6):before {
@@ -126,7 +122,7 @@ rect:nth-child(6):after {
 }
 
 rect:nth-child(7) {
-  height: 124.6666666667px;
+  height: 74.8px;
   background-color: rgba(10, 165, 153, 0.3);
 }
 rect:nth-child(7):before {
@@ -137,7 +133,7 @@ rect:nth-child(7):after {
 }
 
 rect:nth-child(8) {
-  height: 93px;
+  height: 55.8px;
   background-color: rgba(167, 240, 213, 0.25);
 }
 rect:nth-child(8):before {
@@ -148,7 +144,7 @@ rect:nth-child(8):after {
 }
 
 rect:nth-child(9) {
-  height: 92.6666666667px;
+  height: 55.6px;
   background-color: rgba(0, 159, 255, 0.2);
 }
 rect:nth-child(9):before {
@@ -159,7 +155,7 @@ rect:nth-child(9):after {
 }
 
 rect:nth-child(10) {
-  height: 87.6666666667px;
+  height: 52.6px;
   background-color: rgba(10, 165, 153, 0.15);
 }
 rect:nth-child(10):before {
@@ -170,7 +166,7 @@ rect:nth-child(10):after {
 }
 
 rect:nth-child(11) {
-  height: 82.3333333333px;
+  height: 49.4px;
   background-color: rgba(167, 240, 213, 0.1);
 }
 rect:nth-child(11):before {
@@ -227,6 +223,20 @@ rect:after {
 
 .header-height {
   height: 160px;
+}
+
+.more-round-border {
+  border-radius: 2rem !important;
+}
+
+.hr-blue {
+  border: 3px solid rgba(10, 165, 153, 0.45);
+  border-radius: 5px;
+}
+
+.container {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 /*# sourceMappingURL=style.css.map */

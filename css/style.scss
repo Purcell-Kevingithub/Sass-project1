@@ -11,7 +11,7 @@ body {
 
 .slide-left {
   position: relative;
-  left: 50%;
+  left: 48%;
   @extend %slide-left;
 }
 
@@ -23,8 +23,7 @@ h3 {
   text-transform: uppercase;
   letter-spacing: $slogan-spacing;
   line-height: 1.4;
-  position: relative;
-  left: -4.3%;  
+  position: relative; 
   margin-top: 6%;
   margin-bottom: 0px !important;
 }
@@ -39,7 +38,8 @@ circle {
 .element {
   position: absolute;
   top: 20;
-  left: 47%;
+  left: 50%;
+  margin-left: -75px;
   animation-name: appear;
   animation-duration: 1s;
 }
@@ -49,13 +49,10 @@ circle {
   fill: white;
 }
 
-.food-graph{
+.food-graph {
   margin-top: 10%;
 }
 
-.div1, .div2{
-  background-color: #F1F2F3;
-}
 
 $top-foods: ("Sugar Cane" 1898),
 ("Corn" 1017),
@@ -74,7 +71,7 @@ $pale-green: rgba(167, 240, 213, .6);
 @each $food, $tons-produced in $top-foods{
 	$i: index($top-foods,($food $tons-produced));
   rect:nth-child(#{$i + 1}) {
-		height: #{$tons-produced/3}px;
+		height: #{$tons-produced/5}px;
     &:before {
       content: $food;
     }
@@ -139,4 +136,18 @@ background-color: #e9f5dc;
 
 .header-height{
   height: 160px;
+}
+
+.more-round-border{
+  border-radius: 2rem!important;
+}
+
+.hr-blue {
+  border: 3px solid rgba(10, 165, 153, 0.45);
+  border-radius: 5px;
+}
+
+.container {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
