@@ -88,6 +88,40 @@ $pale-green: rgba(167, 240, 213, .6);
 	}
 }
 
+$bottom-foods: ("Sugar Cane" 1898),
+("Corn" 1017),
+("Rice" 738),
+("Wheat" 711),
+("Cow Milk" 635),
+("Potatoes" 374),
+("Vegetables" 279),
+("Soy Beans" 278),
+("Cassava" 263),
+("Sugar Beets" 247);
+
+$color-blue: #8dd3ce;
+$color-purple: #8d91d3;
+$color-green: #8fd38d;
+
+@each $food, $tons-produced in $bottom-foods{
+	$i: index($bottom-foods,($food $tons-produced));
+  rect.rect1:nth-child(#{$i + 1}) {
+		height: #{$tons-produced/5}px;
+    &:before {
+      content: $food;
+    }
+    &:after {
+      content: $tons-produced + "m";
+    }
+    @if($i % 3 == 0){
+  		background-color: fade-out($color-blue, $i*5/100);
+    }@else if($i % 3 == 1){
+      background-color: fade-out($color-purple, $i*5/100);
+    }@else if($i % 3 == 2){
+      background-color: fade-out($color-green, $i*5/100);
+    }
+	}
+}
 
 h1 {
   font-family: 'Montserrat', sans-serif;
@@ -143,11 +177,7 @@ background-color: #e9f5dc;
 }
 
 .hr-blue {
-  border: 3px solid rgba(10, 165, 153, 0.45);
+  border: 10px solid rgba(10, 165, 153, 0.45);
   border-radius: 5px;
 }
 
-.container {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}

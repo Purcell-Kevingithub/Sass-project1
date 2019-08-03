@@ -176,6 +176,116 @@ rect:nth-child(11):after {
   content: "247m";
 }
 
+rect.rect1:nth-child(2) {
+  height: 379.6px;
+  background-color: rgba(141, 145, 211, 0.95);
+}
+rect.rect1:nth-child(2):before {
+  content: "Sugar Cane";
+}
+rect.rect1:nth-child(2):after {
+  content: "1898m";
+}
+
+rect.rect1:nth-child(3) {
+  height: 203.4px;
+  background-color: rgba(143, 211, 141, 0.9);
+}
+rect.rect1:nth-child(3):before {
+  content: "Corn";
+}
+rect.rect1:nth-child(3):after {
+  content: "1017m";
+}
+
+rect.rect1:nth-child(4) {
+  height: 147.6px;
+  background-color: rgba(141, 211, 206, 0.85);
+}
+rect.rect1:nth-child(4):before {
+  content: "Rice";
+}
+rect.rect1:nth-child(4):after {
+  content: "738m";
+}
+
+rect.rect1:nth-child(5) {
+  height: 142.2px;
+  background-color: rgba(141, 145, 211, 0.8);
+}
+rect.rect1:nth-child(5):before {
+  content: "Wheat";
+}
+rect.rect1:nth-child(5):after {
+  content: "711m";
+}
+
+rect.rect1:nth-child(6) {
+  height: 127px;
+  background-color: rgba(143, 211, 141, 0.75);
+}
+rect.rect1:nth-child(6):before {
+  content: "Cow Milk";
+}
+rect.rect1:nth-child(6):after {
+  content: "635m";
+}
+
+rect.rect1:nth-child(7) {
+  height: 74.8px;
+  background-color: rgba(141, 211, 206, 0.7);
+}
+rect.rect1:nth-child(7):before {
+  content: "Potatoes";
+}
+rect.rect1:nth-child(7):after {
+  content: "374m";
+}
+
+rect.rect1:nth-child(8) {
+  height: 55.8px;
+  background-color: rgba(141, 145, 211, 0.65);
+}
+rect.rect1:nth-child(8):before {
+  content: "Vegetables";
+}
+rect.rect1:nth-child(8):after {
+  content: "279m";
+}
+
+rect.rect1:nth-child(9) {
+  height: 55.6px;
+  background-color: rgba(143, 211, 141, 0.6);
+}
+rect.rect1:nth-child(9):before {
+  content: "Soy Beans";
+}
+rect.rect1:nth-child(9):after {
+  content: "278m";
+}
+
+rect.rect1:nth-child(10) {
+  height: 52.6px;
+  background-color: rgba(141, 211, 206, 0.55);
+}
+rect.rect1:nth-child(10):before {
+  content: "Cassava";
+}
+rect.rect1:nth-child(10):after {
+  content: "263m";
+}
+
+rect.rect1:nth-child(11) {
+  height: 49.4px;
+  background-color: rgba(141, 145, 211, 0.5);
+}
+rect.rect1:nth-child(11):before {
+  content: "Sugar Beets";
+}
+rect.rect1:nth-child(11):after {
+  content: "247m";
+}
+
 h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -230,13 +340,8 @@ rect:after {
 }
 
 .hr-blue {
-  border: 3px solid rgba(10, 165, 153, 0.45);
+  border: 10px solid rgba(10, 165, 153, 0.45);
   border-radius: 5px;
-}
-
-.container {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
 }
 
 /*# sourceMappingURL=style.css.map */
