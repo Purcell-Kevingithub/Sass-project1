@@ -12,7 +12,7 @@
 <body>
 	<header class="lightgreen-bg header-height">
 		<svg class="element">
-			<circle cx="100" cy="75" r="75" fill="#204056" />
+			<circle cx="75" cy="75" r="75" fill="#204056" />
 		</svg>
 			
 		<div class="slide-left">
@@ -26,8 +26,8 @@
 	<article class="beige-bg">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-12 d-flex justify-content-between">	
-					<div class="col-4 bg-white more-round-border" style="width: 300px;">
+				<div class="col-12 d-flex justify-content-around mt-5">	
+					<div class="col-3 bg-white more-round-border">
 						<h1 class="food-graph">Top Ten Most Produced Foods in the World, by Tonnes</h1>
 						<rect class="rect1"></rect>
 						<rect class="rect1"></rect>
@@ -40,7 +40,7 @@
 						<rect class="rect1"></rect>
 						<rect class="rect1"></rect>
 					</div>
-					<div class="col-4 bg-light more-round-border">
+					<div class="col-3 bg-light more-round-border ml-2">
 						<h1 class="food-graph">Top Ten Most Produced Foods in the World, by Tonnes</h1>
 						<rect></rect>
 						<rect></rect>
@@ -53,28 +53,44 @@
 						<rect></rect>
 						<rect></rect>
 					</div>
-					<div class="col-4 bg-white more-round-border">
+					<div class="col-3 bg-white more-round-border ml-2">
 						<h1 class="food-graph">Top Ten Most Produced Foods in the World, by Tonnes</h1>
-						<rect></rect>
-						<rect></rect>
-						<rect></rect>
-						<rect></rect>
-						<rect></rect>
-						<rect></rect>
-						<rect></rect>
-						<rect></rect>
-						<rect></rect>
-						<rect></rect>
+						<rect class="rect2"></rect>
+						<rect class="rect2"></rect>
+						<rect class="rect2"></rect>
+						<rect class="rect2"></rect>
+						<rect class="rect2"></rect>
+						<rect class="rect2"></rect>
+						<rect class="rect2"></rect>
+						<rect class="rect2"></rect>
+						<rect class="rect2"></rect>
+						<rect class="rect2"></rect>
 					</div>
 				</div>
 			</div>
 		</div>
 	</article>
 
+	<footer class="beige-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 mt-5" id="footer">
+					<h3><p class="copyright text-center">&copy; Kevin Purcell <span id="year"></span></p></h3>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+<script>
+	window.onload = function(){
+	var date = new Date().getFullYear();
+	document.getElementById("year").innerHTML = date;
+	}
+</script>
 
 
 </body>

@@ -25,9 +25,16 @@ body {
   margin: 3%;
 }
 
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
 .slide-left {
   position: relative;
-  left: 48%;
+  left: 50%;
+  width: 50%;
+  margin-left: -45px !important;
+  padding-top: 30px !important;
 }
 
 h3 {
@@ -39,8 +46,7 @@ h3 {
   letter-spacing: 0.183em;
   line-height: 1.4;
   position: relative;
-  margin-top: 6%;
-  margin-bottom: 0px !important;
+  padding-top: 30px !important;
 }
 
 /* Chrome, Safari, Opera */
@@ -50,9 +56,9 @@ circle {
 
 .element {
   position: absolute;
-  top: 20;
   left: 50%;
-  margin-left: -75px;
+  margin-left: -75px !important;
+  display: block;
   animation-name: appear;
   animation-duration: 1s;
 }
@@ -286,6 +292,116 @@ rect.rect1:nth-child(11):after {
   content: "247m";
 }
 
+rect.rect2:nth-child(2) {
+  height: 379.6px;
+  background-color: rgba(225, 161, 252, 0.95);
+}
+rect.rect2:nth-child(2):before {
+  content: "Sugar Cane";
+}
+rect.rect2:nth-child(2):after {
+  content: "1898m";
+}
+
+rect.rect2:nth-child(3) {
+  height: 203.4px;
+  background-color: rgba(188, 252, 161, 0.9);
+}
+rect.rect2:nth-child(3):before {
+  content: "Corn";
+}
+rect.rect2:nth-child(3):after {
+  content: "1017m";
+}
+
+rect.rect2:nth-child(4) {
+  height: 147.6px;
+  background-color: rgba(252, 193, 161, 0.85);
+}
+rect.rect2:nth-child(4):before {
+  content: "Rice";
+}
+rect.rect2:nth-child(4):after {
+  content: "738m";
+}
+
+rect.rect2:nth-child(5) {
+  height: 142.2px;
+  background-color: rgba(225, 161, 252, 0.8);
+}
+rect.rect2:nth-child(5):before {
+  content: "Wheat";
+}
+rect.rect2:nth-child(5):after {
+  content: "711m";
+}
+
+rect.rect2:nth-child(6) {
+  height: 127px;
+  background-color: rgba(188, 252, 161, 0.75);
+}
+rect.rect2:nth-child(6):before {
+  content: "Cow Milk";
+}
+rect.rect2:nth-child(6):after {
+  content: "635m";
+}
+
+rect.rect2:nth-child(7) {
+  height: 74.8px;
+  background-color: rgba(252, 193, 161, 0.7);
+}
+rect.rect2:nth-child(7):before {
+  content: "Potatoes";
+}
+rect.rect2:nth-child(7):after {
+  content: "374m";
+}
+
+rect.rect2:nth-child(8) {
+  height: 55.8px;
+  background-color: rgba(225, 161, 252, 0.65);
+}
+rect.rect2:nth-child(8):before {
+  content: "Vegetables";
+}
+rect.rect2:nth-child(8):after {
+  content: "279m";
+}
+
+rect.rect2:nth-child(9) {
+  height: 55.6px;
+  background-color: rgba(188, 252, 161, 0.6);
+}
+rect.rect2:nth-child(9):before {
+  content: "Soy Beans";
+}
+rect.rect2:nth-child(9):after {
+  content: "278m";
+}
+
+rect.rect2:nth-child(10) {
+  height: 52.6px;
+  background-color: rgba(252, 193, 161, 0.55);
+}
+rect.rect2:nth-child(10):before {
+  content: "Cassava";
+}
+rect.rect2:nth-child(10):after {
+  content: "263m";
+}
+
+rect.rect2:nth-child(11) {
+  height: 49.4px;
+  background-color: rgba(225, 161, 252, 0.5);
+}
+rect.rect2:nth-child(11):before {
+  content: "Sugar Beets";
+}
+rect.rect2:nth-child(11):after {
+  content: "247m";
+}
+
 h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -332,7 +448,7 @@ rect:after {
 }
 
 .header-height {
-  height: 160px;
+  height: 200px;
 }
 
 .more-round-border {
