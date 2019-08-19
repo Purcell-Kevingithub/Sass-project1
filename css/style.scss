@@ -5,7 +5,7 @@
 
 body {
   background-color: #F1F2F3;
-  margin: 0;
+  margin-bottom: 0 !important;
 }
 
 html, body{
@@ -18,7 +18,7 @@ p {
 
 .slide-left {
   position: relative;
-  left: 50%;
+  left: 41%;
   width: 50%;
   margin-left: -45px !important;
   padding-top: 30px !important;
@@ -37,8 +37,6 @@ h3 {
 
 }
 
-/* Chrome, Safari, Opera */
-
 
 circle {
   opacity: 1;
@@ -46,7 +44,7 @@ circle {
 
 .element {
   position: absolute;
-  left: 50%;
+  left: 48%;
   margin-left: -75px !important;
   display: block;
   animation-name: appear;
@@ -56,117 +54,35 @@ circle {
 #sass-logo {
   width: 100px;
   fill: white;
+  margin-left: 14%;
 }
 
 .food-graph {
   margin-top: 10%;
 }
 
-
-$top-foods: ("Sugar Cane" 1898),
-("Corn" 1017),
-("Rice" 738),
-("Wheat" 711),
-("Cow Milk" 635),
-("Potatoes" 374),
-("Vegetables" 279),
-("Soy Beans" 278),
-("Cassava" 263),
-("Sugar Beets" 247);
-$diamond-blue: rgba(0, 159, 255, .6);
-$sea-green: rgba(10, 165, 153, .6);
-$pale-green: rgba(167, 240, 213, .6);
-
-@each $food, $tons-produced in $top-foods{
-	$i: index($top-foods,($food $tons-produced));
-  rect:nth-child(#{$i + 1}) {
-		height: #{$tons-produced/5}px;
-    &:before {
-      content: $food;
-    }
-    &:after {
-      content: $tons-produced + "m";
-    }
-    @if($i % 3 == 0){
-  		background-color: fade-out($sea-green, $i*5/100);
-    }@else if($i % 3 == 1){
-      background-color: fade-out($pale-green, $i*5/100);
-    }@else if($i % 3 == 2){
-      background-color: fade-out($diamond-blue, $i*5/100);
-    }
-	}
+.lightgreen-bg {
+  background-color: #e9f5dc;
+  }
+  
+.beige-bg{
+  background-color: beige;
 }
 
-$bottom-foods: ("Sugar Cane" 1898),
-("Corn" 1017),
-("Rice" 738),
-("Wheat" 711),
-("Cow Milk" 635),
-("Potatoes" 374),
-("Vegetables" 279),
-("Soy Beans" 278),
-("Cassava" 263),
-("Sugar Beets" 247);
 
-$color-blue: #8dd3ce;
-$color-purple: #8d91d3;
-$color-green: #8fd38d;
-
-@each $food, $tons-produced in $bottom-foods{
-	$i: index($bottom-foods,($food $tons-produced));
-  rect.rect1:nth-child(#{$i + 1}) {
-		height: #{$tons-produced/5}px;
-    &:before {
-      content: $food;
-    }
-    &:after {
-      content: $tons-produced + "m";
-    }
-    @if($i % 3 == 0){
-  		background-color: fade-out($color-blue, $i*5/100);
-    }@else if($i % 3 == 1){
-      background-color: fade-out($color-purple, $i*5/100);
-    }@else if($i % 3 == 2){
-      background-color: fade-out($color-green, $i*5/100);
-    }
-	}
+.more-round-border{
+  border-radius: 2rem!important;
 }
 
-$middle-foods: ("Sugar Cane" 1898),
-("Corn" 1017),
-("Rice" 738),
-("Wheat" 711),
-("Cow Milk" 635),
-("Potatoes" 374),
-("Vegetables" 279),
-("Soy Beans" 278),
-("Cassava" 263),
-("Sugar Beets" 247);
-
-$color-orange: #fcc1a1;
-$color-pink: #e1a1fc;
-$color-lime:#bcfca1 ;
-
-@each $food, $tons-produced in $middle-foods{
-	$i: index($middle-foods,($food $tons-produced));
-  rect.rect2:nth-child(#{$i + 1}) {
-		height: #{$tons-produced/5}px;
-    &:before {
-      content: $food;
-    }
-    &:after {
-      content: $tons-produced + "m";
-    }
-    @if($i % 3 == 0){
-  		background-color: fade-out($color-orange, $i*5/100);
-    }@else if($i % 3 == 1){
-      background-color: fade-out($color-pink, $i*5/100);
-    }@else if($i % 3 == 2){
-      background-color: fade-out($color-lime, $i*5/100);
-    }
-	}
+.hr-blue {
+  border: 10px solid rgba(10, 165, 153, 0.45);
+  border-radius: 5px;
 }
 
+#footer{
+  font-family: "Open Sans", sans-serif;
+  height: 150px;
+}
 
 h1 {
   font-family: 'Montserrat', sans-serif;
@@ -205,36 +121,74 @@ rect {
   }
 }
 
-.lightgreen-bg {
-background-color: #e9f5dc;
+// for loops to create graphs
+@each $food, $tons-produced in $world-foods{
+	$i: index($world-foods,($food $tons-produced));
+  rect.rect1:nth-child(#{$i + 1}) {
+		height: #{$tons-produced/5}px;
+    &:before {
+      content: $food;
+    }
+    &:after {
+      content: $tons-produced + "m";
+    }
+    @if($i % 3 == 0){
+  		background-color: fade-out($color-blue, $i*5/100);
+    }@else if($i % 3 == 1){
+      background-color: fade-out($color-purple, $i*5/100);
+    }@else if($i % 3 == 2){
+      background-color: fade-out($color-green, $i*5/100);
+    }
+	}
 }
 
-.beige-bg{
-  background-color: beige;
+
+@each $food, $tons-produced in $US-foods{
+	$i: index($US-foods,($food $tons-produced));
+  rect.rect2:nth-child(#{$i + 1}) {
+		height: #{$tons-produced/5}px;
+    &:before {
+      content: $food;
+    }
+    &:after {
+      content: $tons-produced + "m";
+    }
+    @if($i % 3 == 0){
+  		background-color: fade-out($sea-green, $i*5/100);
+    }@else if($i % 3 == 1){
+      background-color: fade-out($pale-green, $i*5/100);
+    }@else if($i % 3 == 2){
+      background-color: fade-out($diamond-blue, $i*5/100);
+    }
+	}
 }
 
-.header-height{
-  height: 200px;
+
+@each $food, $tons-produced in $PA-foods{
+	$i: index($PA-foods,($food $tons-produced));
+  rect.rect3:nth-child(#{$i + 1}) {
+		height: #{$tons-produced/5}px;
+    &:before {
+      content: $food;
+    }
+    &:after {
+      content: $tons-produced + "m";
+    }
+    @if($i % 3 == 0){
+  		background-color: fade-out($color-orange, $i*5/100);
+    }@else if($i % 3 == 1){
+      background-color: fade-out($color-pink, $i*5/100);
+    }@else if($i % 3 == 2){
+      background-color: fade-out($color-lime, $i*5/100);
+    }
+	}
 }
 
-.more-round-border{
-  border-radius: 2rem!important;
-}
-
-.hr-blue {
-  border: 10px solid rgba(10, 165, 153, 0.45);
-  border-radius: 5px;
-}
-
+// Media Queries
 @media (max-width: 992px) {
   .sm-margin{
     margin-top: 5%;
     margin-left: 10%;
     margin-right: 10%;
-  }
-}
-
-#footer{
-  height: 110px;
-  font-family: "Open Sans", sans-serif;
+  }  
 }
