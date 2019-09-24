@@ -9,7 +9,6 @@ A short description of the motivation behind the creation and maintenance of the
 ## Build status
 
 Build status of continus integration i.e. travis, appveyor etc. Ex. -
-
 Build Status Windows Build Status
 
 ## Code style
