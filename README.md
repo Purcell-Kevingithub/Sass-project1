@@ -17,4 +17,4 @@ Project is created with:
 
 	
 ## Setup
-This project was only made to be tested and not run by others.
+Clone this repo and then open the index.html in your browser.
